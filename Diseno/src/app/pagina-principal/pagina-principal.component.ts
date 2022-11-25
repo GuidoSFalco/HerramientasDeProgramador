@@ -11,6 +11,7 @@ let bandera_fondos = true
 let bandera_iconos = true
 let bandera_practicas = true
 let bandera_bibio_herramientas = true
+let bandera_herramientas = true
 
 let bandera_img = true
 
@@ -345,6 +346,32 @@ export class PaginaPrincipalComponent implements OnInit {
     this.busqueda()
   }
 
+  public herramientas() {
+    if (bandera_herramientas === true) {
+      
+      $('.lista-items--herramientas').css({
+        display: 'flex'
+      })
+      bandera_herramientas = false
+      contador_banderas += 1
+      contador_elementos.push("elemento-herramientas")
+    } else {
+      $('.lista-items--herramientas').css({
+        display: 'none'
+      })
+      bandera_herramientas = true
+      contador_banderas -= 1
+
+      for (let i = 0; i < contador_elementos.length; i++) {
+        if (contador_elementos[i] == "elemento-herramientas") {
+          contador_elementos.splice(i, 1);
+        }
+      }
+    }
+
+    this.busqueda()
+  }
+
 
   public busqueda() {
     /*
@@ -442,7 +469,7 @@ export class PaginaPrincipalComponent implements OnInit {
 
 
   public busquedaManual() {
-    let filtros = ['botones','inputs','loaders','checkboxes','switches','tarjetas','colores','fondos','iconos']
+    let filtros = ['botones','inputs','loaders','checkboxes','switches','tarjetas','colores','fondos','iconos','biblioteca herramientas','herramientas']
     for (let i = 0; i < filtros.length; i++) {
       
       if ($('input').val() === filtros[i]) {
@@ -465,22 +492,21 @@ export class PaginaPrincipalComponent implements OnInit {
           case 5:
             this.tarjetas()
             break;
-          case 5:
-            this.tarjetas()
+          case 6:
+            this.colores()
             break;
-          case 5:
-            this.tarjetas()
+          case 7:
+            this.fondos()
             break;
-          case 5:
-            this.tarjetas()
+          case 8:
+            this.iconos()
             break;
-          case 5:
-            this.tarjetas()
+          case 9:
+            this.bibio_herramientas()
             break;
-          case 5:
-            this.tarjetas()
+          case 10:
+            this.herramientas()
             break;
-        
           default:
             break;
             
