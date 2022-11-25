@@ -1,0 +1,265 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="contenedor">
+
+    
+    <div class="header">
+        <div class="buscador">
+            <input type="text" placeholder="Buscar...">
+            <a (click)="busquedaManual()"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+
+        
+
+        <div class="dropdown">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contenido">
+        <!-- <div class="imagen-ampliada">
+
+        </div> -->
+        <div class="lista-items">
+            <div class="lista-items--botones">
+                <ul (click)="botones()">
+                    <li><p style="margin: auto">Botones</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="lista-items--inputs">
+                <ul (click)="inputs()">
+                    <li><p style="margin: auto">Inputs</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lista-items--loaders">
+                <ul (click)="loaders()">
+                    <li><p style="margin: auto">Loaders</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lista-items--checkboxes">
+                <ul (click)="checkboxes()">
+                    <li><p style="margin: auto">Checkboxes</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lista-items--switches">
+                <ul (click)="switches()">
+                    <li><p style="margin: auto">Switches</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lista-items--tarjetas">
+                <ul (click)="tarjetas()">
+                    <li><p style="margin: auto">Tarjetas</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="lista-items--colores">
+                <ul (click)="colores()">
+                    <li><p style="margin: auto">Colores</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="lista-items--fondos">
+                <ul (click)="fondos()">
+                    <li><p style="margin: auto">Fondos</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="lista-items--iconos">
+                <ul (click)="iconos()">
+                    <li><p style="margin: auto">Iconos</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="lista-items--practicas">
+                <ul (click)="practicas()">
+                    <li><p style="margin: auto">Practicas</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="lista-items--bibio_herramientas">
+                <ul (click)="bibio_herramientas()">
+                    <li><p style="margin: auto">Herramientas</p></li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <div class="elemento elemento-botones elemento-inputs elemento-loaders elemento-checkboxes elemento-switches elemento-tarjetas">
+            <div class="elemento--titulo">
+                <div class="botones" (click)="botones()">
+                    <p>Botones</p>
+                </div>
+                <div class="inputs" (click)="inputs()">
+                    <p>Inputs</p>
+                </div>
+                <div class="loaders" (click)="loaders()">
+                    <p>Loaders</p>
+                </div>
+                <div class="checkboxes" (click)="checkboxes()">
+                    <p>Checkboxes</p>
+                </div>
+                <div class="switches" (click)="switches()">
+                    <p>Switches</p>
+                </div>
+                <div class="tarjetas" (click)="tarjetas()">
+                    <p>Tarjetas</p>
+                </div>
+            </div>
+            
+            <div class="elemento--contenido">
+                <div class="link">
+                    <a href="https://uiverse.io/">https://uiverse.io/</a>
+                </div>
+                <img style="z-index: 1;" src="https://i.ibb.co/1JrDcm2/uiverse.png" alt="uiverse" border="0">
+                <img style="z-index: 1;" src="https://i.ibb.co/thzxrJN/uiverse2.jpg" alt="uiverse2" border="0">
+                <div class="elemento--background">
+                    <div class="background-barra1"></div>
+                    <div class="background-barra2"></div>
+                    <div class="background-barra3"></div>
+                    <div class="background-barra4"></div>
+                    <div class="background-barra5"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="elemento elemento-colores">
+            <div class="elemento--titulo">
+                <div class="colores" (click)="colores()">
+                    <p>Colores</p>
+                    
+                </div>
+            </div>
+            
+            <div class="elemento--contenido">
+                <div class="link">
+                    <a href="https://coolors.co/">https://coolors.co/</a>
+                </div>
+                <img src="https://i.ibb.co/cQZd1P0/Diapositiva1.jpg" alt="Diapositiva1" border="0">
+                <img src="https://i.ibb.co/x3ZHMNY/Diapositiva2.jpg" alt="Diapositiva2" border="0">
+                <div class="elemento--background">
+                    <div class="background-barra1"></div>
+                    <div class="background-barra2"></div>
+                    <div class="background-barra3"></div>
+                    <div class="background-barra4"></div>
+                    <div class="background-barra5"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="elemento elemento-fondos">
+            <div class="elemento--titulo">
+                <div class="fondos" (click)="fondos()">
+                    <p>Fondos</p>
+                    
+                </div>
+            </div>
+            
+            <div class="elemento--contenido">
+                <div class="link">
+                    <a href="https://coolbackgrounds.io/" style="color: black">https://coolbackgrounds.io/</a>
+                </div>
+                <!-- <img style="z-index: 1;" src="https://i.ibb.co/1JrDcm2/uiverse.png" alt="uiverse" border="0"> -->
+                <!-- <img style="z-index: 1;" src="https://i.ibb.co/thzxrJN/uiverse2.jpg" alt="uiverse2" border="0"> -->
+                <div class="elemento--background">
+                    <div class="background-barra1"></div>
+                    <div class="background-barra2"></div>
+                    <div class="background-barra3"></div>
+                    <div class="background-barra4"></div>
+                    <div class="background-barra5"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="elemento elemento-fondos">
+            <div class="elemento--titulo">
+                <div class="fondos" (click)="fondos()">
+                    <p>Fondos</p>
+                    
+                </div>
+            </div>
+            
+            <div class="elemento--contenido">
+                <div class="link">
+                    <a href="https://getwaves.io/" style="color: black">https://getwaves.io/</a>
+                </div>
+                <!-- <img style="z-index: 1;" src="https://i.ibb.co/1JrDcm2/uiverse.png" alt="uiverse" border="0"> -->
+                <!-- <img style="z-index: 1;" src="https://i.ibb.co/thzxrJN/uiverse2.jpg" alt="uiverse2" border="0"> -->
+                <div class="elemento--background">
+                    <div class="background-barra1"></div>
+                    <div class="background-barra2"></div>
+                    <div class="background-barra3"></div>
+                    <div class="background-barra4"></div>
+                    <div class="background-barra5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</div>
